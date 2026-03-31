@@ -1,1 +1,1 @@
-# https://gracel0000.github.io/
+# gracel0000.github.io/
