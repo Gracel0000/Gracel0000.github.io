@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第 7 週進度報告 — CPE 實力賦能專題</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+      color: #333;
+      line-height: 1.8;
+      background: #f5f7fa;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a3a5c, #2a6496);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    header h1 { font-size: 2rem; margin-bottom: 10px; }
+    header p  { font-size: 1rem; opacity: .85; }
+    header .back-link {
+      display: inline-block;
+      margin-top: 16px;
+      color: rgba(255,255,255,.8);
+      text-decoration: none;
+      font-size: .9rem;
+      border: 1px solid rgba(255,255,255,.4);
+      padding: 6px 16px;
+      border-radius: 20px;
+      transition: background .2s;
+    }
+    header .back-link:hover { background: rgba(255,255,255,.15); color: #fff; }
+
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 36px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.08);
+      margin-bottom: 28px;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      color: #1a3a5c;
+      border-left: 4px solid #2a6496;
+      padding-left: 12px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #2a6496;
+      margin: 20px 0 8px;
+    }
+
+    .card p { margin-bottom: 12px; color: #444; }
+
+    .card ul, .card ol {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+    .card li { margin-bottom: 8px; color: #444; }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 10px 16px;
+      margin-bottom: 12px;
+    }
+    .info-grid dt {
+      font-weight: bold;
+      color: #1a3a5c;
+    }
+    .info-grid dd { color: #444; }
+
+    .badge {
+      display: inline-block;
+      background: #e8f0fb;
+      color: #2a6496;
+      font-size: .82rem;
+      font-weight: bold;
+      padding: 3px 12px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+    }
+
+    .site-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #2a6496;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 22px;
+      border-radius: 8px;
+      font-size: .95rem;
+      transition: background .2s;
+      margin-top: 8px;
+    }
+    .site-link:hover { background: #1a3a5c; }
+
+    .arch-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .arch-table th {
+      background: #1a3a5c;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-size: .92rem;
+    }
+    .arch-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e8ecf0;
+      font-size: .92rem;
+      color: #444;
+    }
+    .arch-table tr:last-child td { border-bottom: none; }
+    .arch-table tr:nth-child(even) td { background: #f7f9fc; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #1a3a5c;
+      color: rgba(255,255,255,.7);
+      font-size: .85rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.5rem; }
+      .container { padding: 0 12px 40px; }
+      .card { padding: 28px 18px; }
+      .info-grid { grid-template-columns: 1fr; gap: 4px 0; }
+      .info-grid dt { margin-top: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>第 7 週進度報告</h1>
+  <p>CPE 實力賦能專題 — 靜宜大學資訊工程學系 114 學年度第 2 學期</p>
+  <a class="back-link" href="index.html">← 返回主頁</a>
+</header>
+
+<div class="container">
+
+  <!-- 本週摘要 -->
+  <div class="card">
+    <span class="badge">2026 年 4 月 第 7 週</span>
+    <h2>本週工作摘要</h2>
+    <p>本週的核心任務為架設 <strong>CPE Exercise@PU</strong> 線上測驗網站，提供靜宜大學學生一個可實際進行 CPE 模擬練習的線上平台，作為後續智慧備考功能整合的基礎環境。</p>
+    <a class="site-link" href="https://cpex.cs.pu.edu.tw/" target="_blank">
+      前往 CPE Exercise@PU 網站 ↗
+    </a>
+  </div>
+
+  <!-- 架設環境 -->
+  <div class="card">
+    <h2>系統架設環境</h2>
+    <table class="arch-table">
+      <tr>
+        <th>項目</th>
+        <th>內容</th>
+      </tr>
+      <tr>
+        <td>實體主機作業系統</td>
+        <td>Windows Server 2022</td>
+      </tr>
+      <tr>
+        <td>虛擬化技術</td>
+        <td>Hyper-V（內建於 Windows Server 2022）</td>
+      </tr>
+      <tr>
+        <td>虛擬機作業系統</td>
+        <td>Ubuntu（Linux）</td>
+      </tr>
+      <tr>
+        <td>Online Judge 平台</td>
+        <td>QDUOJ（青島大學 Online Judge）</td>
+      </tr>
+      <tr>
+        <td>容器化部署</td>
+        <td>Docker / Docker Compose</td>
+      </tr>
+      <tr>
+        <td>網站網址</td>
+        <td><a href="https://cpex.cs.pu.edu.tw/" target="_blank">https://cpex.cs.pu.edu.tw/</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- 架設步驟 -->
+  <div class="card">
+    <h2>架設流程說明</h2>
+
+    <h3>1. 主機環境準備</h3>
+    <p>於 Windows Server 2022 實體主機上啟用 Hyper-V 角色，建立一台 Ubuntu 虛擬機作為 QDUOJ 的執行環境，並設定適當的網路橋接，使虛擬機可對外提供服務。</p>
+
+    <h3>2. QDUOJ 部署</h3>
+    <p>在 Ubuntu 虛擬機上安裝 Docker 與 Docker Compose，使用 QDUOJ 官方提供的 Docker 映像，透過 <code>docker-compose up</code> 快速啟動包含前端、後端、評測沙盒與資料庫在內的完整系統。</p>
+
+    <h3>3. 網域與反向代理設定</h3>
+    <p>申請並設定 <code>cpex.cs.pu.edu.tw</code> 子網域，透過反向代理將外部 HTTPS 請求導至 Hyper-V VM 內部的 QDUOJ 服務，並完成 SSL/TLS 憑證設定，確保連線安全。</p>
+
+    <h3>4. 初始化與題庫匯入</h3>
+    <p>完成管理員帳號設定與平台基本組態後，將先前爬取的 49 題 CPE 歷屆題目匯入至本站題庫，確認評測功能正常運作。</p>
+  </div>
+
+  <!-- 成果與後續 -->
+  <div class="card">
+    <h2>本週成果</h2>
+    <ul>
+      <li>CPE Exercise@PU 網站（<a href="https://cpex.cs.pu.edu.tw/" target="_blank">https://cpex.cs.pu.edu.tw/</a>）成功上線，可正常存取。</li>
+      <li>QDUOJ 評測引擎於 Hyper-V VM 上穩定運行，可接受程式碼提交並回傳評測結果。</li>
+      <li>現有題庫已包含 49 題 CPE 歷屆題目，學生可立即進行模擬練習。</li>
+      <li>網域與 HTTPS 設定完成，確保安全連線。</li>
+    </ul>
+
+    <h3>下週預計工作</h3>
+    <ul>
+      <li>整合 LLM 自動標註題目知識點模組。</li>
+      <li>開始開發學生端學習弱點診斷功能。</li>
+      <li>規劃知識圖譜資料結構與視覺化方案。</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 靜宜大學資訊工程學系 — 114 學年度第 2 學期 專題製作
+</footer>
+
+</body>
+</html>
